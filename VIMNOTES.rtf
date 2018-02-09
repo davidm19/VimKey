@@ -1,0 +1,115 @@
+TWO MODES:
+- insert mode
+- normal mode
+
+i = go to insert mode
+Esc = back to normal mode
+----------------------------------------------
+BASIC MOVEMENT IN VIM (characters):
+- h,j,k,l
+
+h = left
+j = down
+k = up
+l = right
+----------------------------------------------
+WORD MOVEMENT IN VIM (words):
+- w,b,e
+
+w = start of next word
+b = beginning of word
+e = end of word
+----------------------------------------------
+COMBINING MOVEMENT KEYS WITH A NUMBER:
+- (number)(key) = particular key function (number) amount of times
+
+3w = pressing w three times
+
+30i- Esc = inserting - 30 times (REMEMBER THE ESC AFTERWARDS BECAUSE IF YOU DON'T, WHATEVER YOU WRITE AFTERWARDS WILL BE INCLUDED ALONG WITH THE -)
+----------------------------------------------
+FINDING PARTICULAR OCCURENCES OF A CHARACTER:
+-f + (a character), then F backwards
+
+fo = find the next o
+
+3fq = find the third occurence of q
+----------------------------------------------
+FINDING PARTICULAR OCCURENCES OF A WORD:
+-*,#
+
+* = find the next occurence of the word under the cursor
+# = find the previous occurence of the word under the cursor
+----------------------------------------------
+JUMPING BETWEEN PARENTHESES:
+-%
+
+% = go to end of parentheses (or beginning)
+----------------------------------------------
+JUMP TO BEGINNING OR END OF LINES:
+-0,$
+
+0 = jump to the beginning of the line
+$ = jump to the end of the line
+----------------------------------------------
+JUMP TO BEGINNING, END OF FILES OR PARTICULAR LINES:
+-gg,G
+
+gg = go to beginning of the file
+G = go to end of the file
+
+2G = go to line 2
+----------------------------------------------
+SEARCHING FOR TEXT:
+-/,n,N
+
+/apples = search for "apples"
+n = go to next occurence of "apples"
+N = go to previous occurence of "apples"
+----------------------------------------------
+INSERTING TEXT ONTO A NEW LINE:
+-o,O
+
+o = insert text on a new line
+O = insert text on a line above the current line
+----------------------------------------------
+REMOVING A CHARACTER:
+-x,X
+
+x = remove the word under the cursor
+X = remove the word to the left of the cursor
+----------------------------------------------
+REPLACING LETTER UNDER CURSOR:
+-r
+
+r + letter = replace the letter under the cursor
+----------------------------------------------
+DELETING THINGS:
+-d
+
+dw = deletes the first word on the right side of the cursor
+p = pastes deleted word in other location (for some reason)
+----------------------------------------------
+REPEAT THE PREVIOUS COMMAND:
+-.
+
+. = repeats previous command
+----------------------------------------------
+VISUAL MODE:
+-v,e,d
+
+v = enter visual mode
+e = select text
+
+use movement keys to control how much highlighting you have
+----------------------------------------------
+OTHER IMPORTANT COMMANDS:
+
+u = undo
+ctrl + r = redo
+:saveas (FILENAME) = save and name file
+:w = "write" (save file)
+:w !python = if the code is python, then you can run it with this command
+:wq = save and quit
+:q! = quit without saving
+----------------------------------------------
+WE'RE DONE!
